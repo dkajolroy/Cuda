@@ -1,0 +1,169 @@
+@media all and (max-width : 992px){
+    .team .item {
+        width: 45%;
+        margin: 30px 0;
+        text-align: center;
+    }
+    .skills .item img {
+        width: 100px;
+        height: 100px;
+    }
+    .skills .item h2 {
+        font-size: 16px;
+    }
+    .portfolio .bottom .item img {
+        width: 350px;
+    }
+    .service .item {
+        width: 45%;
+        display: inline-block;
+    }
+}
+
+@media all and (max-width : 975px){
+    .row > * {
+        width: 85%;
+    }
+    .about .item{
+        text-align: center;
+    }
+    .about .item .left {
+        float: none;
+    }
+    .contact textarea{
+        width: 90%;
+    }
+}
+
+@media all and (max-width : 832px){
+    
+}   
+
+@media all and (max-width : 770px){
+    .skills .item {
+        width: 45%;
+    }
+    .portfolio .bottom .item img {
+        width: 200px;
+    }
+    .portfolio .bottom .item p {
+        font-size: 14px;
+    }
+    .portfolio .bottom > a {
+        color: #fff;
+        background-color: #17c2a4;
+        padding: 12px 30px;
+        border-bottom: 3px solid #14a58c;
+    }
+    .team h1 {
+        font-size: 25px;
+    }
+}
+
+@media all and (max-width : 650px){
+   
+    nav .menu a{
+        display: block;
+        float: right;
+        position: relative;
+        color: white;
+    }
+    
+    header nav ul {
+        display: none;
+        float: right;
+    }
+    .skills h1 {
+        font-size: 25px;
+    }
+    .skills p {
+        font-size: 15px;
+    }
+    .portfolio .top h1 {
+        font-size: 30px;
+    }
+    .portfolio .top p {
+        width: 50%;
+        font-size: 13px;
+    }
+    .about .item .right q {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    .about .item .right h2 {
+        font-size: 16px;
+    }
+    .about .item .right p {
+        font-size: 13px;
+    }
+    .logo img {
+        margin-left: 20px;
+    }
+}
+@media all and (max-width : 537px){
+    .owl-heading h1 {
+        font-size: 20px;
+    }
+    .owl-heading a {
+        width: 200PX;
+        padding: 10px 30px;
+        margin-top: 20px;
+        font-family: semibold;
+        border: none;
+        transition: linear .4s;
+        position: relative;
+    }
+    footer nav ul a {
+        padding: 10px 12px;
+        font-size: 16px;
+    }
+    .team .item ul i {
+        font-size: 10px;
+        padding: 5px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+    .service .item img {
+        height: 60px;
+        margin-bottom: 20px;
+    }
+    .service .item h2 {
+        font-size: 16px;
+    }
+    .service .item p {
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width : 431px){
+    .portfolio .bottom .item img {
+        width: 100px;
+    }
+    .portfolio .bottom .item p {
+        font-size: 10px;
+    }
+    .team .item img {
+        width: 100px;
+        height: 100px;
+    }
+    .team .item h2 {
+        font-size: 16px;
+    }
+    .team .item span {
+        font-size: 13px;
+    }
+    .team .item p {
+        font-size: 12px;
+    }
+    .contact form input[type="submit"] {
+        width: 200px;
+        padding: 10px 15px;
+    }
+    .portfolio .bottom nav ul a {
+        padding: 5px 10px;
+        margin: 0 5px;
+    }
+}

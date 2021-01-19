@@ -1,0 +1,548 @@
+/* --------------------------------------------
+    Template Name: Cuda
+    Tempate URL: http://github.com/kajolroy
+    Discription: Creative / Prortfolio one page Template
+    Author: Kajol Roy
+    Author URL: http://github.com/ikajolroy
+    Lincense: GNU Genarel Public lincense version 3.0
+    License URL: http://github.com/ikajolroy
+    Version: 1.0
+
+    All files, unless otherwise stated, are relesed under the GNU Genarel Public License 
+    Version: 3.0 (http://github.com/ikajolroy/cuda.html
+
+-------------------------------------------------
+
+1. Typography 
+2. Header-area
+    2.0 Logo
+    2.1 Nav area
+    2.2 Owl-Carousel slider
+    2.3 Work with us button
+3. Service section
+4. Team sectin
+5. Skills section
+6. Portfolio section
+7. About section
+8. Contact section
+9.Footer section
+
+------------------------------------------------- */
+
+/* --------------------------- 1. Typography --------------------*/
+
+/* Linked fonts */
+@font-face {
+    font-family: regular;
+    src: url(fonts/TitilliumWeb-Regular_1.woff);
+}
+@font-face{
+    font-family: bold;
+    src: url(fonts/TitilliumWeb-Bold_1.woff);
+}
+@font-face{
+    font-family:light ;
+    src: url(fonts/TitilliumWeb-Light_1.woff);
+}
+@font-face{
+    font-family: semibold;
+    src: url(fonts/TitilliumWeb-SemiBold_1.woff);
+}
+/* linked fonts ends */
+
+
+h1{
+    font-family: bold;
+    font-size: 38px;
+    text-align: center;
+}
+p{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+/* --------------------------- 2. Header-area--------------------*/
+
+/* ****** 2.0 Logo area ****** */
+.logo img{
+    width: 100px;
+}
+.logo{
+    position: absolute;
+    padding: 50px 0;
+    z-index: 7;
+}
+.logo nav{
+    justify-content: flex-end;
+}
+
+
+/*********** 2.1 Nav area **********/
+header{
+    position: relative;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+header ul li a{
+    padding: 5px 18px;
+    display: block;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: regular;
+    color: #fff;
+    text-decoration: none;
+}
+header ul li a:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.508);
+}
+nav .menu a{
+    display: none;
+}
+
+/* Welcome text */
+.owl-heading {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    top: 200px;
+    width: 70%;
+    margin: 0 15%;
+}
+.owl-heading h1{
+    text-align: center;
+    font-family: bold;
+    color: #fff;
+    font-size: 38px;
+}
+.owl-heading a{
+    background-color: #eb7d4b;
+    width: 300PX;
+    padding: 20px 50px;
+    margin-top: 30px;
+    font-family: semibold;
+    border: none;
+    transition: linear .4s;
+    position: relative;
+}
+
+/*********** 2.2 Owl-Carousel slider **********/
+.slid-image{
+    height: 550px;
+    background-position:center;
+    background-size: cover;
+}
+.slid-image::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000;
+    opacity: .5;
+}
+
+/* Owl nav & dots */
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+	font-size: 60px;
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    transform: translateY(-50%);
+}
+.owl-carousel .owl-nav button.owl-next{
+    right: 0;
+    margin-right: 20px;
+}
+.owl-carousel .owl-nav button.owl-prev{
+    left: 0;
+    margin-left: 20px;
+}
+
+
+.owl-carousel button.owl-dot{
+    width: 10px ;
+    height: 10px;
+    background-color: rgb(255, 13, 247);
+    margin: 0 3px;
+    border-radius: 50%;
+}
+.owl-carousel button.owl-dot.active{
+    background-color: #fff;
+}
+.owl-dots{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+}
+
+
+
+/* --------------------------- 3. Service section --------------------*/
+
+.service{
+    padding: 70px 0;
+    background-color: #17c2a4;
+    text-align: center;
+    color: #fff;
+}
+.service h1{
+    letter-spacing: 3px;
+}
+.border1px{
+    width: 80px;
+    margin: 0 auto;
+    border: 2px solid rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+}
+.service p{
+    width: 70%;
+    margin: 20px auto 70px;
+}
+
+.service .item{
+    width: 24%;
+    display: inline-block;
+}
+.service .item img{
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.service .item h2{
+    text-transform: uppercase;
+    font-family: semibold;
+    font-size: 22px;
+}
+.service .item p{
+    font-size: 13px;
+    width: 80%;
+    margin: 0 auto 20px;
+}
+
+
+
+/* --------------------------- 4. Team sectin--------------------*/
+
+.team{
+    text-align: center;
+    padding: 70px 0;
+    background-color: #e7f1f8;
+}
+.team h1{
+    color: #3c4761;
+    letter-spacing: 3px;
+}
+.team p{
+    color: #3c4761;
+    font-family: regular;
+    font-size: 17px;
+    margin: 20px 0 70px;
+}
+.team .item{
+    width: 23%;
+    margin: 0 5px;
+    display: inline-block;
+}
+.team .item img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+
+}
+.team .item h2{
+    font-family: bold;
+    color: #3c4761;
+    font-size: 22px;
+    margin: 20px 0 3px;
+}
+.team .item span{
+    color: #30bae7;
+    font-family: regular;
+}
+.team .item p{
+    width: 95%;
+    font-family: light;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.team .item ul{
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.team .item ul li{
+    display: inline-block;
+}
+.team .item ul i{
+    font-size: 15px;
+    color: rgb(60, 60, 60);
+    background-color: #bdd1df;
+    border-radius: 50%;
+    padding: 10px;
+    margin:0 3px;
+    transition: .4s;
+}
+.team .item ul i:hover{
+    background-color: orange;
+    transform: rotate(360deg);
+}
+
+
+/* --------------------------- 5. Skills section--------------------*/
+
+.skills{
+    text-align: center;
+    padding: 70px 0;
+}
+.skills h1{
+    font-family: bold;
+    letter-spacing: 3px;
+    color: #3c4761;
+}
+.skills p{
+    width: 60%;
+    margin: 20px auto 70px;
+    color: #49536c;
+    font-family: regular;
+    font-size: 18px;
+}
+.skills .item{
+    width: 24%;
+    text-align: center;
+    display: inline-block;
+}
+.skills .item img{
+    width: 150px;
+    height: 150px;
+}
+
+.skills .item h2{
+    text-align: center;
+    font-family: semibold;
+    text-transform: uppercase;
+    color: #3c4761;
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+
+
+/* --------------------------- 5. Portfolio Section--------------------*/
+
+.portfolio{
+    padding: 70px 0 100px;
+    text-align: center;
+    background-color: #ffdd99;
+}
+.portfolio .top h1{
+    text-transform: uppercase;
+    color: #393939;
+}
+.portfolio .top p{
+    width: 35%;
+    margin: 20px auto;
+    font-family: regular;
+    font-size: 16px;
+    color: #393939;
+}
+
+.portfolio .bottom nav ul{
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    margin: 30px auto 70px;
+}
+.portfolio .bottom nav ul a{
+    padding: 5px 20px;
+    background-color: rgba(0, 0, 0, 0.234);
+    margin: 0 5px ;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #393939;
+    font-family: regular;
+    text-decoration: none;
+}
+.portfolio .bottom nav ul a.active, .portfolio .bottom nav ul a:hover{
+    background-color: #fff;
+}
+
+.portfolio .bottom .item{
+    width: 45%;
+    display: inline-block;
+    margin: auto;
+}
+.portfolio .bottom .item img{
+    width: 450px;
+}
+.portfolio .bottom .item p{
+    margin: 10px auto 40px;
+    font-family: regular;
+    font-size: 18px;
+    color: #393939;
+}
+
+.portfolio .bottom> a{
+    color: #fff;
+    background-color: #17c2a4;
+    padding: 18px 50px;
+    border-radius: 10px;
+    font-family: semibold;
+    text-decoration: none;
+    border-bottom: 5px solid #14a58c;
+}
+.portfolio .bottom a:hover{
+    background-color: #00e2bd;
+}
+
+/* --------------------------- 7. About section --------------------*/
+
+.about{
+    background-color: #d74680;
+    padding: 100px 0 0;
+}
+.about .top h1{
+    color: #fff;
+}
+.about .top p{
+    text-align: center;
+    color: #fff;
+    margin: 20px 0 50px;
+    font-family: regular;
+}
+
+
+.about .item{
+    width: 48%;
+    display: inline-block;
+    margin-bottom: 80px;
+}
+.about .item .left{
+    float: left;
+    margin-right: 50px;
+}
+
+.about .item img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.about .item .right{
+    overflow: hidden;
+    margin-right: 20px;
+}
+.about .item .right q{
+    font-style: italic;
+    color: #fff;
+    font-size: 17px;
+}
+.about .item .right h2{
+    color: #ffff;
+    text-transform: uppercase;
+    font-family: bold;
+    font-size: 22px;
+    margin: 20px 0 0;
+}
+.about .item .right p{
+    color: #ffbc74;
+    margin: 0;
+    font-size: 18px;
+    font-family: regular;
+}
+
+
+
+
+/* --------------------------- 8. Contact us --------------------*/
+
+.contact{
+    background-color: #3c5499;
+    padding: 100px 0;
+    text-align: center;
+}
+.contact h1{
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 3px;
+}
+.contact p{
+    color: #fff;
+    font-size: 16px;
+    margin: 20px 0 70px;
+    
+}
+.contact input{
+    width: 40%;
+    padding: 10px 20px ;
+    color: #fff;
+    background-color: #273a71;
+    border: 0;
+    border-radius: 5px;
+    margin: 20px 5px;
+}
+.contact textarea{
+    display: block;
+    margin: auto;
+    color: #fff;
+    background-color: #273a71;
+    border: 0;
+    border-radius: 5px;
+}
+.contact form input[type="submit"] {
+    color: #fff;
+    width: 250px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-family: regular;
+    margin: 50px 0 0;
+    background-color: #30bae7;
+    border-bottom: 5px solid #26a3cc;
+}
+.contact form input[type="submit"]:hover{
+    background-color: #0787ff;
+    border-bottom: 5px solid #277ced;
+}
+
+/* --------------------------- 9.Footer section --------------------*/
+
+footer{
+    background-color: #344b8e;
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+}
+footer nav ul{
+    list-style: none;
+}
+footer nav ul li{
+    display: inline-block;
+}
+footer nav ul a{
+    padding: 15px 18px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: semibold;
+}
+
+footer nav ul a:hover{
+    color: #30bae7;
+    text-decoration: none;
+}
+footer p{
+    text-align: center;
+    color: #fff;
+}
+/* Footer section ends */
