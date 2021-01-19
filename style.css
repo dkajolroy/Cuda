@@ -403,6 +403,7 @@ nav .menu a{
     border-bottom: 5px solid #14a58c;
     width: 300px;
     margin: auto;
+    display: block;
 }
 .portfolio .bottom a:hover{
     background-color: #00e2bd;
